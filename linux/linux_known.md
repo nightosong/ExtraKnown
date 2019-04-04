@@ -24,8 +24,8 @@ whatis -w "comman*"
 info command
 ```
 #### 使用man命令
-查询命令的说明文档
 
+查询命令的说明文档 **(Manual)**
 ```
 man command
 ```
@@ -89,34 +89,28 @@ ps：按住“CTRL + R”就可以搜索已经执行过的命令，它可以在�
 
 ### 2.1 创建和删除
 
-**(Make Directory)** **(Remove)** **(Move)**
-
-* 创建：mkdir
-* 删除：rm
+* 创建：mkdir  **(Make Directory)**
+* 删除：rm  **(Remove)**
 * 删除非空目录：rm -rf dir
 * 删除日志：rm *log（等价：find ./ -name "*log" -exec rm {};）
-* 移动：mv
-* 复制：cp（复制目录：cp -r）
+* 移动：mv  **(Move)**
+* 复制：cp（复制目录：cp -r） **(Copy)**
 
 查看当前目录下文件个数
 ```bash
 find src_dir | wc -l
 ```
+
 复制目录
-
-**(Copy)**
-
 ```
 cp -r src_dir dest_dir
 ```
 ### 2.2 目录切换
 
-**(Change Directory)** **(Print Working Directory)**
-
-* 找到文件/目录位置： cd
+* 找到文件/目录位置： cd  **(Change Directory)**
 * 切换到上一个工作目录： cd -
 * 切换到home目录： cd or cd ~
-* 显示当前路径： pwd
+* 显示当前路径： pwd  **(Print Working Directory)**
 * 更改当前的工作路径为path： cd path
 
 ### 2.3 列出目录项
@@ -375,9 +369,7 @@ find . -type f -mtime +10 -name "*.txt" -exec cp {} OLD \;
 
 ### 3.2. grep 文本搜索
 
-**(General Regular Expression Print)**
-
-常用参数
+常用参数 **(General Regular Expression Print)**
 * -o 只输出匹配的文本行
 * -v 只输出没有匹配的文本行
 * -c 统计文件中包含文本的次数
