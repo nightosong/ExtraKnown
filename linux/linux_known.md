@@ -60,7 +60,7 @@ info (1)             - read Info documents
 info (5)             - readable online documentation
 info (n)             - Return information about the state of the Tcl interpreter
 ```
-我们可以指定查看分类3的帮助
+我们可以指定查看分类1的帮助
 
 ```bash
 man 1 info
@@ -322,10 +322,12 @@ source .bash_profile
 ```
 
 ### 2.11 Bash快捷输入或删除
-* Ctrl+U ： 删除光标到首行的所有字符，在某些设置下，删除全行
-* Ctrl+W ： 删除当前光标到前边的最近一个空格之间的字符
-* Ctrl+H ： backspace，删除光标前边的字符
-* Ctrl+R ： 匹配最相近的一个文件，然后输出
+命令|解释
+---|---
+Ctrl+U | 删除光标到首行的所有字符，在某些设置下，删除全行
+Ctrl+W | 删除当前光标到前边的最近一个空格之间的字符
+Ctrl+H | backspace，删除光标前边的字符
+Ctrl+R | 匹配最相近的一个文件，然后输出
 
 ## 3. 文本处理
 shell脚本命令尽量单行书写，不要超过两行
